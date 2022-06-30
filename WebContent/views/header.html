@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link href="${pageContext.request.contextPath}/css/style.css?202206291"
+	type="text/css" rel="stylesheet">
+
+<link rel="stylesheet"
+	href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+	rel="stylesheet">
+
+<title>Kaiser ONLINE SHOP</title>
+</head>
+
+<header id="header">
+	<div class="title">
+		<h1 id="shoptitle">kaiser</h1>
+
+		<div class="right">
+
+			<ul class="flex">
+				<form action="${pageContext.request.contextPath}/SubMenuController"
+					method="post">
+					<li class="submenu"><button type="submit" name="submenu"
+							value="account" class="subbtn">
+							<span class="sublogo"><span
+								class="material-symbols-outlined"> account_circle</span></span>
+						</button></li>
+					<li class="submenu">
+
+						<button type="submit" name="submenu" value="cart" class="subbtn">
+							<span class="sublogo"><span
+								class="material-symbols-outlined"> shopping_cart </span></span>
+						</button>
+
+					</li>
+				</form>
+
+
+
+				<div class="top_search">
+					<form action="${pageContext.request.contextPath}/SearchController"
+						method="post">
+						<li class="submenu"><input type="text" maxlength="50"
+							name="keyword" placeholder="Search..." class="textarea" />
+							<button type="submit" name="search" value="search"
+								class="searchlogo">
+								<span class="material-symbols-outlined"> search </span>
+							</button></li>
+
+					</form>
+				</div>
+
+			</ul>
+		</div>
+
+	</div>
+
+
+
+	<nav class="wrapper">
+		<form action="${pageContext.request.contextPath}/MenuController"
+			method="post">
+			<ul class="flex">
+
+				<li class="menu"><input type="submit" name="menu"
+					value="TOP PAGE" class="menubtn"></li>
+				<li class="menu"><input type="submit" name="menu"
+					value="ALL ITEM" class="menubtn"></li>
+				<li class="menu"><input type="submit" name="menu"
+					value="SKIN CARE" class="menubtn"></li>
+				<li class="menu"><input type="submit" name="menu"
+					value="MAKE UP" class="menubtn"></li>
+
+
+
+			</ul>
+		</form>
+
+	</nav>
+
+
+
+</header>
+
+
+<body>

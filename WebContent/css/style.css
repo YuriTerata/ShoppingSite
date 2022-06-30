@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+p {
+	color: #696969;
+}
+
+#header {
+	border-bottom: double 2px #808080;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 1px #555;
+}
+
+#shoptitle {
+	margin-top: 8px;
+	margin-bottom: 2px;
+	margin-left: 80px;
+	font-family: 'Goldman', cursive;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	gap: 100px 20px;
+}
+
+li {
+	list-style: none;
+}
+
+.menu {
+	width: 15%;
+	text-align: center;
+}
+
+.submenu {
+	display: inline-flex;
+}
+
+.menubtn, .subbtn, .searchlogo, .sublogo, .allow {
+	display: inline-block;
+	border-radius: 10%; /* 角丸       */
+	text-align: center; /* 文字位置   */
+	cursor: pointer; /* カーソル   */
+	background: #ffffff; /* 背景色     */
+	color: #696969; /* 文字色     */
+	line-height: 1em; /* 1行の高さ  */
+	transition: .3s; /* なめらか変化 */
+	border: 2px solid #ffffff; /* 枠の指定 */
+}
+
+.menubtn {
+	padding: 12px 15px; /* 余白       */
+}
+
+.allow {
+	padding: 10px 8px;
+}
+
+.menubtn:hover, .searchlogo:hover, .sublogo:hover, .allow:hover,
+	.loginbtn:hover, .adminbtn:hover, .cartbtn:hover {
+	color: #ffffff; /* 背景色     */
+	background: #696969; /* 文字色     */
+}
+
+.material-symbols-outlined:hover {
+	color: #ffffff;
+}
+
+.sublogo {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+/*top画面*/
+.swiper-slide {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.swiper-slide img {
+	width: 80%;
+}
+
+/*矢印*/
+.swiper-button-prev:after, .swiper-button-next:after {
+	content: none !important;
+}
+
+/*login画面*/
+.login, .regist, .update, .logout {
+	margin-top: 50px;
+	justify-content: center;
+	text-align: center;
+}
+
+.text {
+	display: inline-block;
+	text-align: left;
+}
+
+.loginbtn, .adminbtn, .cartbtn {
+	display: inline-block;
+	border-radius: 10%; /* 角丸       */
+	text-align: center; /* 文字位置   */
+	cursor: pointer; /* カーソル   */
+	background: #ffffff; /* 背景色     */
+	color: #696969; /* 文字色     */
+	line-height: 1em; /* 1行の高さ  */
+	transition: .3s; /* なめらか変化 */
+	border: 0.2px solid #999999; /* 枠の指定 */
+}
+
+.loginbtn, .adminbtn {
+	padding: 8px 8px; /* 余白       */
+}
+
+.cartbtn {
+	padding: 20px 15px; /* 余白       */
+}
+
+.rstitle {
+	font-size: 20px;
+	color: #696969;
+}
+
+.required {
+	color: red;
+}
+
+/*商品画面*/
+li .productimg {
+	max-width: 100%;
+}
+
+#column ul {
+	width: calc(100 + 20px);
+	margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#column li {
+	padding: 0 10px 20px;
+}
+
+#column li a, #column li a:visited {
+	text-decoration: none;
+	color: #111;
+}
+
+#column li p {
+	font-size: 90%;
+	margin-bottom: 3px;
+}
+
+#column li .price {
+	font-size: 80%;
+	display: block;
+}
+
+.column04 li {
+	width: calc(25% - 20px);
+}
+
+/*商品詳細*/
+.detail {
+	text-align: center;
+}
+
+.detail .detailimg {
+	max-width: 50%;
+}
+
+.btn input:first-of-type {
+	margin-right: 100px;
+}
+
+.cartremove {
+	text-align: center;
+}
+
+/*footer*/
+.sns {
+	margin-top: 20px;
+	text-align: center;
+	margin: 0 0 -8px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.sns li {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0 8px 8px 0;
+	padding: 0;
+}
+
+.sns li a::before {
+	margin-top: 40px;
+	background-color: #fff;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	color: #696969;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 16px;
+	height: 44px; /* Button height */
+	line-height: 44px; /* Button height */
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	text-align: center;
+	width: 44px; /* Button width */
+}
+
+.sns li a:hover::before {
+	background-color: #696969;
+	color: #fff;
+}
+
+.sns li a[href*="facebook.com"]::before {
+	content: "\f09a";
+}
+
+.sns li a[href*="instagram.com"]::before {
+	content: "\f16d";
+}
+
+.sns li a[href*="twitter.com"]::before {
+	content: "\f099";
+}
+
+.copyright {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+	font-size: 8px;
+	color: #696969;
+	font-family: 'Goldman', cursive;
+}
